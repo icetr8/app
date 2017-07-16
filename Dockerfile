@@ -11,6 +11,6 @@ RUN apt-get -y autoremove
 RUN mkdir /app
 VOLUME /app
 WORKDIR /app
-ADD ./src/requirements.txt .
+ADD ./requirements.txt .
 RUN pip install -r requirements.txt
 
